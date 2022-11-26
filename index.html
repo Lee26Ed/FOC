@@ -26,7 +26,7 @@
       <!-- Container wrapper -->
       <div class="container">
         <!-- Navbar brand -->
-        <a class="navbar-brand me-2" href="index.html">
+        <a class="navbar-brand me-2" href="#">
           <img
             src="img/foc.png"
             height="25"
@@ -60,21 +60,31 @@
           <!-- Left links -->
   
           <div class="d-flex align-items-center">
-            <button type="button" class="btn btn-link px-3 me-2">
-              <a href="#course">Course</a>
-            </button>
-            <button type="button" class="btn btn-link px-3 me-2">
-              <a href="#projects">Projects</a>
-            </button>
-            <button type="button" class="btn btn-link px-3 me-2">
-              <a href="#concepts">Concepts</a>
-            </button>
-            <button type="button" class="btn btn-link px-3 me-2">
-              <a href="#documentation">Documentation</a>
-            </button>
-            <button type="button" class="btn btn-link px-3 me-2">
-              <a href="#dev-team">Dev Team</a> 
-            </button>
+            <a href="#">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Course
+              </button>
+            </a>
+            <a href="#projects">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Projects
+              </button>
+            </a>
+            <a href="#concepts">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Concepts
+              </button>
+            </a>
+            <a href="#documentation">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Documentation
+              </button>
+            </a>
+            <a href="#dev-team">
+              <button type="button" class="btn btn-link px-3 me-2">
+                Dev Team
+              </button>
+            </a> 
           </div>
         </div>
         <!-- Collapsible wrapper -->
@@ -116,8 +126,8 @@
 
   <main>
     <!-- Projects -->
-    <div class="container-fluid px-0">
-      <section id="projects" class="divider p-5">
+    <div id="projects" class="container-fluid px-0">
+      <section class="divider pb-5 pl-5 pr-5 top">
         <!-- row -->
         <div class="row justify-content-center align-items-center pb-5">
           <!-- column -->
@@ -236,8 +246,8 @@
 
     <!-- Concepts -->
     <div class="container text-white">
-      <section id="concepts">
-        <h2 class="text-center p-5">Concepts</h2>
+      <section id="concepts" class="top">
+        <h2 class="text-center p-3">Concepts</h2>
         <!-- carousel -->
         <div id="carouselExampleCrossfade" class="carousel slide carousel-fade mb-5" data-mdb-ride="carousel">
           <div class="carousel-indicators">
@@ -267,7 +277,7 @@
               <img src="img/concepts1.png" class="d-block w-100" alt="Concepts 1"/>
             </div>
             <div class="carousel-item">
-              <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+              <img src="img/concepts2.png" class="d-block w-100" alt="Camera"/>
             </div>
             <div class="carousel-item">
               <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
@@ -291,8 +301,8 @@
 
     <!-- Documentation -->
     <div class="container text-white mb-5">
-      <section id="documentation">
-        <h2 class="text-center p-5">Documentation</h2>
+      <section id="documentation" class="top">
+        <h2 class="text-center p-3">Documentation</h2>
         <div
           class="bg-image hover-overlay ripple shadow-1-strong rounded"
           data-mdb-ripple-color="light"
@@ -309,28 +319,30 @@
     <!-- Dev Team -->
     <div class="container-fluid px-0 text-black">
       <section id="dev-team" class="divider p-5">
-        <h2 class="text-center my-5">About Me</h2>
-        <!-- row -->
-        <div class="row justify-content-center align-items-center pb-5">
-          <!-- column -->
-          <div class="col-md-4 text-center text-md-end mb-4">
-            <!-- image -->
-            <a class="ripple" href="https://github.com/LeeEdbert" target="_blank">
-              <img
-                alt="Me"
-                class="img-fluid rounded hover-shadow"
-                style="width: 260px; height: 260px"
-                src="img/me.jpg"
-              />
-            </a>
-            <!-- image -->
+        <h2 class="text-center my-5">About Us</h2>
+        <!-- card row -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-lg-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/me.jpg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+              <div class="card-body">
+                <h5 class="card-title">Lee Panti</h5>
+                <p class="card-text">
+                  A driven associates in Math, Physics and IT student at the University of Belize with strong academic achievement. Possesses critical thinking, problem solving, and good decision-making skills. Keen to pursue a career in Energy Engineering or Software development.
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- column -->
-          <div class="col-md-5 px-5">
-            <p>A driven associates in Math, Physics and IT student at the University of Belize with strong academic achievement. Possesses critical thinking, problem solving, and good decision-making skills. Keen to pursue a career in Energy Engineering or Software development.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/reilly.jpg" class="card-img-top" alt="Palm Springs Road"/>
+              <div class="card-body">
+                <h5 class="card-title">Reilly Lambey</h5>
+                <p class="card-text">My name is Reilly lambey I am 17years of ages, I have a high school degree in science and working towards my associates degree in computer science. I am from independence village and birthday is 30th may, 2005. Son of Mrs. Sheridan and Mr. William lambey, and brother of Miya lambey. I am working towards a day where I can program website on my own and also make my own game..</p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- row -->
 
       </section>
     </div>
@@ -340,34 +352,6 @@
 
   <!-- Footer -->
 <footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-1">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © Powered by
