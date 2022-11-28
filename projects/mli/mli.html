@@ -10,51 +10,72 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
       <!-- MDB -->
     <link rel="stylesheet" href="../../css/mdb.min.css" />
-    <link rel="stylesheet" href="notgate.css">
+    <link rel="stylesheet" href="mli.css">
     <title>Document</title>
 </head>
 <body>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-5">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../../index.html#projects">
-                <img
-                src="../../img/foc.png"
-                class="me-2"
-                height="30"
-                alt="MDB Logo"
-                loading="lazy"
-                />
-                Home
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="../notgate/notgate.html">not</a>
-                  <a class="nav-link" href="../andgate/andgate.html">And</a>
-                  <a class="nav-link" href="../orgate/orgate.html">or</a>
-                  <a class="nav-link" href="../xorgate/xor.html">Xor</a>
-                  <a class="nav-link" href="../binaryconv/binary.html">Binary - Hex</a>
-                  <a class="nav-link" href="../ascii/ascii.html">ASCII Conv</a>
-                  <a class="nav-link" href="../unicode/unicode.html">UNICODE Conv </a>
-                  <a class="nav-link" href="../bmi/bmi.html">BMI</a>
-                </div>
-              </div>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html#projects">
+            <img
+            src="../../img/foc.png"
+            class="me-2"
+            height="30"
+            alt="FOC Logo"
+            loading="lazy"
+            />
+            Home
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../notgate/notgate.html">Not</a>
+              <a class="nav-link" href="../andgate/andgate.html">And</a>
+              <a class="nav-link" href="../orgate/orgate.html">Or</a>
+              <a class="nav-link" href="../xorgate/xor.html">Xor</a>
+              <a class="nav-link" href="../binaryconv/binary.html">Binary - Hex</a>
+              <a class="nav-link" href="../ascii/ascii.html">ASCII Conv</a>
+              <a class="nav-link" href="../unicode/unicode.html">UNICODE Conv </a>
+              <a class="nav-link" href="../mli/mli.html">Machine Language</a>
+              <a class="nav-link" href="../bmi/bmi.html">BMI</a>
             </div>
-          </nav>
-          <!-- Navbar -->
+          </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
     
+
+  <main>
+    <h1 class="text-center pt-4 text-black mb-5">Machine Language Instructions Converter</h1>
+
+    <div class="container">
+      <div class="buttons">
+          <div class="btns 1">116D</div>
+          <div class="btns 2">126C</div>
+          <div class="btns 3">5120</div>
+          <div class="btns 4">306B</div>
+          <div class="btns 5">C000</div>
+      </div>
+      <div class="images" id="image">
+          <img class="mli" src="../images/ml1.png" alt="Machine language">
+      </div>
+  </div>
+
+  </main>
 
     <footer class="bg-dark text-center text-white fixed-bottom">
     <!-- Copyright -->
@@ -66,5 +87,6 @@
     </footer>
     <!-- MDB -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <script src="mli.js"></script>
 </body>
 </html>
