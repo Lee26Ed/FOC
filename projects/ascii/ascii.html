@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+      <!-- MDB -->
+    <link rel="stylesheet" href="../../css/mdb.min.css" />
+    <link rel="stylesheet" href="ascii.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html#projects">
+            <img
+            src="../../img/foc.png"
+            class="me-2"
+            height="30"
+            alt="MDB Logo"
+            loading="lazy"
+            />
+            Home
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../notgate/notgate.html">not</a>
+              <a class="nav-link" href="../andgate/andgate.html">And</a>
+              <a class="nav-link" href="../orgate/orgate.html">or</a>
+              <a class="nav-link" href="../xorgate/xor.html">Xor</a>
+              <a class="nav-link" href="../binaryconv/binary.html">Binary - Hex</a>
+              <a class="nav-link" href="../unicode/unicode.html">UNICODE Conv</a>
+              <a class="nav-link" href="../mli/mli.html">Machine Language</a>
+              <a class="nav-link" href="../bmi/bmi.html">BMI</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+   
+  <main>
+    <h1 class="text-center pt-4 text-black">ASCII Converter</h1>
+
+    <div class="container">
+      <div class="form">
+          <span class="message">Enter a Number from 0 to 127:</span>
+          <input type="tell" id="input" placeholder="Ex. 33" autofocus>
+          <button id="convert-btn">Convert</button>
+
+          <span class="message">ASCII character: </span>
+          <span class="message" id="ascii-value"></span>
+      </div>
+      <div class="image">
+          <img id="table" src="../images/ascii.png" alt="Hexadecimal table">
+      </div>
+    </div>
+
+  </main>
+
+    <footer class="bg-dark text-center text-white fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © Powered by
+        <a class="text-white" href="https://www.ub.edu.bz/">UB</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- MDB -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <script src="ascii.js"></script>
+</body>
+</html>

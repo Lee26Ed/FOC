@@ -1,0 +1,67 @@
+body {
+    background-color: #eee;
+}
+
+.mess {
+    color: #333;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    margin: 10px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#input {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(6, 248, 50);
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    .img-size {
+        width: 200px;
+    }
+    
+    .container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .img-size {
+        width: 100px;
+    }
+    
+    .container {
+        width: 300px;
+    }
+}
+
+
+#output {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+
+.clicked-input {
+    background-color: rgb(6, 248, 50);
+}
+
+.clicked-output {
+    background-color: yellow;
+}
